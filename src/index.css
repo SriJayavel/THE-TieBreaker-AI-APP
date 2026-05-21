@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-gold-cream: #c5a059;
+  --color-gold-muted: rgba(197, 160, 89, 0.3);
+  --color-gold-hover: #b48e47;
+  
+  --color-dark-bg: #09090b;
+  --color-dark-sidebar: #0f0f13;
+  --color-dark-card: #131316;
+  --color-dark-input: #17171c;
+  --color-dark-border: rgba(255, 255, 255, 0.08);
+  --color-dark-border-subtle: rgba(255, 255, 255, 0.04);
+}
+
+/* Glassy and modern visual tokens inspired by Gemini's signature interfaces */
+.gemini-glass-card {
+  background: rgba(19, 19, 22, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.gemini-aurora-glow-1 {
+  background: radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.04) 0%, transparent 50%);
+}
+
+.gemini-aurora-glow-2 {
+  background: radial-gradient(circle at 90% 80%, rgba(197, 160, 89, 0.05) 0%, transparent 60%);
+}
+
+.gemini-aurora-glow-3 {
+  background: radial-gradient(circle at 50% -20%, rgba(139, 92, 246, 0.06) 0%, transparent 65%);
+}
+
+.gemini-sparkle-shine {
+  background: linear-gradient(90deg, rgba(147, 51, 234, 0.1) 0%, rgba(99, 102, 241, 0.1) 50%, rgba(197, 160, 89, 0.1) 100%);
+}
+
+.gold-glow {
+  box-shadow: 0 4px 30px rgba(197, 160, 89, 0.03);
+}
+
+.gold-glow-large {
+  box-shadow: 0 10px 40px rgba(197, 160, 89, 0.06), 0 0 20px rgba(139, 92, 246, 0.03);
+}
+
+/* Custom scrollbar optimized for dark backgrounds */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0f13;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pulseBorder {
+  0%, 100% { border-color: rgba(197, 160, 89, 0.25); box-shadow: 0 0 15px rgba(197, 160, 89, 0.02); }
+  50% { border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 0 25px rgba(139, 92, 246, 0.05); }
+}
+
+.pulse-border-gold {
+  animation: pulseBorder 4s infinite ease-in-out;
+}
+
+@keyframes geminiWave {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gemini-text-stream {
+  background: linear-gradient(90deg, #ffffff, #c5a059, #a78bfa, #f472b6, #ffffff);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: geminiWave 6s linear infinite;
+}
+
+
