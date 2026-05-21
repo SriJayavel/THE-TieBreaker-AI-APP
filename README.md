@@ -1,4 +1,4 @@
-# THE-TieBreaker-AI-APP ⚖️🤖
+# THE-TieBreaker-AI-APP 
 
 An AI-powered full-stack decision-making assistant designed to eliminate choice paralysis and bring structured clarity to complex options. Instead of relying on basic pros-and-cons lists, this application serves as an advanced digital sounding board that evaluates user choices through logic, weighted criteria scoring, and structured data insights.
 
@@ -6,7 +6,7 @@ Live Demo: [THE-TieBreaker-AI-APP on Render](https://the-tiebreaker-ai-app.onren
 
 ---
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 - **Frontend:** React, Vite, Tailwind CSS, TypeScript
 - **Backend:** Node.js, Express.js
@@ -14,7 +14,7 @@ Live Demo: [THE-TieBreaker-AI-APP on Render](https://the-tiebreaker-ai-app.onren
 
 ---
 
-## ✨ Core Features
+##  Core Features
 
 - **Structured AI Evaluation:** Utilizes strict JSON schemas on the backend to guarantee consistent, hallucination-free decision data models from the Gemini API.
 - **Sophisticated Dark UI:** A custom-crafted glassmorphism user interface heavily inspired by the modern Gemini ecosystem aesthetic.
@@ -23,7 +23,7 @@ Live Demo: [THE-TieBreaker-AI-APP on Render](https://the-tiebreaker-ai-app.onren
 
 ---
 
-## 🛠️ Setup & Installation
+##  Setup & Installation
 
 Follow these steps to run the project locally on your machine:
 
